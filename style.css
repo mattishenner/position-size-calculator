@@ -1,7 +1,7 @@
 body{
     font-family: system-ui, sans-serif;
-    background: linear-gradient(180deg, rgba(173,180,186,1) 0%, rgba(198,203,207,1) 100%);
-    
+    background: #202020;
+    min-height: 100vh;
   }
   
   .overline{
