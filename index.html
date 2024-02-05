@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="calculator">
+        <p class="overline">Stock</p>
+        <h2>Position Size Calculator</h2>
+        
+          <label for="accountSize">Account Size</label><br>
+        <div class="input-group">
+          <input type="number" id="accountSize" name="accountSize" value="5000">
+          <select id="accountCurrency" name="accountCurrency">
+              <option value="USD">USD</option>
+              <option value="DKK" selected>DKK</option>
+              <option value="EUR">EUR</option>
+          </select><br>
+          </div>
+        
+          <label for="riskPercentage">Risk %</label><br>
+          <input type="number" id="riskPercentage" name="riskPercentage" value="1"><br>
+          <label for="entryPrice">Entry Price</label><br>      
+        <div class="input-group">
+          <input type="number" id="entryPrice" name="entryPrice">
+                <select id="securityCurrency" name="securityCurrency">
+              <option value="USD" selected>USD</option>
+              <option value="DKK">DKK</option>
+              <option value="EUR">EUR</option>
+          </select><br>
+        </div>
+        
+          <label for="stopLossPrice">Stop Loss Price</label><br>
+          <input type="number" id="stopLossPrice" name="stopLossPrice"><br>
+       
+        
+        
+          <input type="button" value="Calculate" onclick="calculatePositionSize()">
+            <p id="result"></p>
+      </form>
+  
+</body>
+</html>
